@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/logo.png";
 
+// Componente Header com logo do app
 function Header() {
   return (
     <header className="flex justify-center items-center p-4 mb-6">

@@ -2,7 +2,7 @@
 
 <i>Antônio Carlos Ribeiro da Cruz</i>
 
- O Esqueci !? Lista de compras é uma aplicação PWA que devido a necessidade de se organizar na hora de fazer compras, surge como solucionador, dando a possibilidade do usuário criar listas de compras com seus itens e deixar salvo na aplicação.
+ O Esqueci !? Lista de compras é uma aplicação React que devido a necessidade de se organizar na hora de fazer compras, surge como solucionador, dando a possibilidade do usuário criar listas de compras com seus itens e deixar salvo na aplicação.
 
 <h3>Interface:</h3>
 
@@ -37,8 +37,10 @@
 - A aplicação é original e não uma cópia da aplicação de um colega ou de uma aplicação já existente? **Sim**
 - A aplicação tem pelo menos duas interfaces (telas ou páginas) independentes? **Sim**
 - A aplicação armazena e usa de forma relevante dados complexos do usuário? **Sim**
-- A aplicação possui um manifesto para instalação no dispositivo do usuário? **Sim**
-- A aplicação possui um _service worker_ que permite o funcionamento off-line? **Sim**
+- A aplicação foi desenvolvida com o React? **Sim**
+- A aplicação contém pelo menos dois componentes React além do componente principal? **Sim**
+- A aplicação possui um manifesto para instalação no dispositivo do usuário? **Não**
+- A aplicação possui um _service worker_ que permite o funcionamento off-line? **Não**
 - O código da minha aplicação possui comentários explicando cada operação? **Sim**
 - A aplicação está funcionando corretamente? **Sim**
 - A aplicação está completa? **Sim**

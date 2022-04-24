@@ -4,7 +4,7 @@ import { FaPlusCircle } from "react-icons/fa";
 import NoDataImg from "../assets/images/no-data.svg";
 import ListItem from "../components/ListItem";
 
-function List({ goToAddPage }) {
+function List({ goToAddPage, goToEditPage }) {
   const [lists, setLists] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function List({ goToAddPage }) {
     if (lists.length) {
       return (
         <div className="pt-8 px-6">
-          {lists.map((list) => <ListItem key={list.id} list={list} onEditClick={() => console.log('edit')}/>)}
+          {lists.map((list) => <ListItem key={list.id} list={list} onEditClick={() => goToEditPage(list)}/>)}
         </div>
       );
     } else {

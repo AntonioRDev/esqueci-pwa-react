@@ -4,8 +4,10 @@ import Edit from "./components/Edit";
 import Header from "./components/Header";
 import List from "./components/List";
 
+// Componente principal que controla o display dos componentes de listagem, edicao e adicao
 function Main() {
   const [displayControl, setDisplayControl] = useState("list");
+  const [editingItem, setEditingItem] = useState(undefined);
 
   const setDisplayPage = () => {
     switch (displayControl) {
@@ -13,13 +15,16 @@ function Main() {
         return (
           <List
             goToAddPage={() => setDisplayControl("add")}
-            goToEditPage={() => setDisplayControl("edit")}
+            goToEditPage={(item) => {
+              setDisplayControl("edit");
+              setEditingItem(item);
+            }}
           />
         );
       case "add":
         return <Add back={() => setDisplayControl("list")} />;
       case "edit":
-        return <Edit back={() => setDisplayControl("list")} />;
+        return <Edit itemToEdit={editingItem} back={() => setDisplayControl("list")} />;
       default:
         console.error("default display case");
         return;

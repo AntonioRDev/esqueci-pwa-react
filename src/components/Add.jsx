@@ -3,6 +3,7 @@ import { FaAngleLeft, FaTrash } from "react-icons/fa";
 import { IoMdSave } from "react-icons/io";
 import { addListToStorage } from '../services/storage.service';
 
+// Componente de criação de listas - estados e funcoes para persistir 
 function Add({ back }) {
   const [listName, setListName] = useState("");
   const [productName, setProductName] = useState("");
